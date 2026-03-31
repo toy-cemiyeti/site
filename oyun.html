@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buton Oyunu</title>
+</head>
+<body>
+    <h1>Puan Oyunu</h1>
+    <p>Puanın: <span id ="puan">0</span></p>
+    <p>Level: <span id="level">1</span></p>
+    <button onclick="puanArtir()"> Tıkla ve Puan Kazan</button> 
+    <div id="mesaj" style="margin-top:20px; font-size:24px; color:red;"></div>
+    <script>
+    let puan = 0;
+    let level = 1;
+    function puanArtir() {           
+    puan=puan + 1;
+    document.getElementById("puan").innerText=puan;
+    if (puan % 10 === 0) {
+        level++;
+    document.getElementById("level").innerText=level; 
+    document.getElementById("mesaj").innerText="LEVEL ATLADIN!";
+        setTimeout(() => {
+        document.getElementById("mesaj").innerText="";},2000);
+ } 
+}
+    </script>
+    </body>
+    </html>
