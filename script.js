@@ -230,6 +230,7 @@ function sayfaGoster(sayfa) {
             <div id="chatAlani" class="chat-alani">
                 <div class="mesaj ai">Selam yolcu. İçinde taşıdığın soruyu sor. Seni dinliyorum...</div>
             </div>
+            <img src="shaman.png" class="shaman-bg">
 
             <div class="alt-bar">
                 <input type="text" id="soru" placeholder="Sorunu yaz..." />
