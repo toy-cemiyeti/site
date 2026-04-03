@@ -10,7 +10,6 @@ body {
     color: #ffffff;
 }
 
-/* GENEL */
 .app {
     max-width: 500px;
     margin: 0 auto;
@@ -20,7 +19,6 @@ body {
     padding-bottom: 90px;
 }
 
-/* HEADER */
 .header {
     text-align: center;
     padding: 30px 20px 20px;
@@ -35,6 +33,186 @@ body {
     background: radial-gradient(circle, #00c2ff, #005b8a);
     display: flex;
     align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+.header p {
+    color: #7ddfff;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.hero {
+    background: #10223a;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #163455;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #cfefff;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card, .liste-kart {
+    background: #10223a;
+    border-radius: 16px;
+    padding: 18px;
+    border: 1px solid #163455;
+    margin-bottom: 12px;
+}
+
+.card h3, .liste-kart h3 {
+    color: #00c2ff;
+}
+
+.card p {
+    color: #bfe9ff;
+}
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    padding: 12px;
+    background: #081422;
+    border-top: 1px solid #122844;
+}
+
+.menu button {
+    padding: 10px 6px;
+    border: none;
+    border-radius: 12px;
+    background: #122844;
+    color: #7ddfff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu button.active {
+    background: #00c2ff;
+    color: #001421;
+}
+
+.geri-btn {
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #00c2ff;
+    color: #001421;
+    font-weight: bold;
+}
+
+.chat-alani {
+    background: #10223a;
+    border: 1px solid #163455;
+    padding: 10px;
+    border-radius: 12px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.mesaj {
+    padding: 10px 12px;
+    margin: 6px 0;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.ai {
+    background: #1b314d;
+    color: #eaf8ff;
+}
+
+.kullanici {
+    background: #00c2ff;
+    color: #001421;
+    margin-left: auto;
+}
+
+.alt-bar {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.alt-bar input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #163455;
+    font-size: 16px;
+    background: #10223a;
+    color: #ffffff;
+}
+
+.alt-bar input::placeholder {
+    color: #7aa9c7;
+}
+
+.alt-bar button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #00c2ff;
+    color: #001421;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.katki-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.katki-form input,
+.katki-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #163455;
+    background: #10223a;
+    color: white;
+}
+
+.katki-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #44637d;
+    color: white;
+}    align-items: center;
     justify-content: center;
     font-size: 28px;
     font-weight: bold;
